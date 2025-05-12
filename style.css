@@ -28,7 +28,7 @@ body, html {
   .logo-gif {
     width: 400px;
     height: auto;
-    margin-bottom: 20px; /* controls spacing between logo and header */
+    margin-bottom: 10px; /* controls spacing between logo and header */
     z-index: 2;
   }
 
