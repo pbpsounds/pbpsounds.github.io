@@ -25,19 +25,11 @@ body, html {
     text-align: center;
   }
   
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 5px; /* Pushes album header down */
-    position: relative;
-    z-index: 10;
-  }
-
-  .logo-video {
-    max-width: 200px;
+  .logo-gif {
+    width: 400px;
     height: auto;
-    pointer-events: none;
+    margin-bottom: 10px; /* controls spacing between logo and header */
+    z-index: 2;
   }
 
   
