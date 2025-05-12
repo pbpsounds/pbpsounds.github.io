@@ -19,7 +19,7 @@ body, html {
   
   .overlay {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -28,7 +28,7 @@ body, html {
   .logo-gif {
     width: 400px;
     height: auto;
-    margin-bottom: 2px; /* controls spacing between logo and header */
+    margin-bottom: 20px; /* controls spacing between logo and header */
     z-index: 2;
   }
 
