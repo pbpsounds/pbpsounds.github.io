@@ -36,12 +36,14 @@ body, html {
   }
 
   
-  .logo-gif {
-    width: 400px;
-    height: auto;
-    margin-bottom: -10px; /* controls spacing between logo and header */
-    z-index: 2;
-  }
+ .logo-gif {
+  display: block;
+  margin: 0 auto -10px auto; /* center + spacing below */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  z-index: 2;
+}
 
   
   .links a {
