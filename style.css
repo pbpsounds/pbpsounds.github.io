@@ -48,3 +48,20 @@ body, html {
     background-color: rgba(0, 255, 85, 0.377);
   }
   
+  .about-section {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3); /* optional: slight dark overlay */
+    border-radius: 10px;
+  }
+  .about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    margin-bottom: 15px;
+  }
