@@ -125,3 +125,30 @@ body, html {
   background: #00ff88;
   border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none; /* optional: disables gestures like swipe-refresh */
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    overscroll-behavior: contain; /* prevents bounce/overscroll */
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+}
