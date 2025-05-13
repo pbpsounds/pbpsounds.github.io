@@ -90,18 +90,16 @@ body, html {
 }
 
 .album-art {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 90px;
-  height: auto;
+  width: 200px;
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 12px;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   animation-delay: 1s;
-  z-index: 2;
-  border-radius: 10px; /* optional: smooth corners */
 }
+
 
 /* Custom glowing cursor */
 .cursor {
