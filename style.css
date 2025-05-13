@@ -37,7 +37,7 @@ body, html {
 
   
  .logo-gif {
-  display: block;
+  display: inline-block;
   margin: 0 auto -10px auto; /* center + spacing below */
   width: 100%;
   max-width: 400px;
@@ -149,6 +149,13 @@ body, html {
 
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .logo-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
   }
 }
 
