@@ -54,7 +54,17 @@
     <source src="rain_loop.mp4" type="video/mp4" />
   </video>
 <a href="https://www.youtube.com/watch?v=8HxFNwNlgxo&feature=youtu.be" target="_blank" rel="noopener">
-  <img src="assets/album-cover.jpg" alt="Album Cover" class="album-art">
+  <img src="album-cover.jpg" alt="Album Cover" class="album-art">
 </a>
+<div class="cursor"></div>
+
+<script>
+  const cursor = document.querySelector('.cursor');
+
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+</script>
 </body>
 </html>

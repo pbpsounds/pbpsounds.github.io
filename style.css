@@ -101,3 +101,36 @@ body, html {
   z-index: 2;
   border-radius: 10px; /* optional: smooth corners */
 }
+
+body, html {
+  cursor: none; /* Hide default cursor */
+  overflow: auto; /* Enable scrollbars */
+}
+
+/* Custom glowing cursor */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff88;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  box-shadow: 0 0 15px #00ff88;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Scrollbar Styling (WebKit) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 4px;
+}
