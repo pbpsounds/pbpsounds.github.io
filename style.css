@@ -129,25 +129,21 @@ body, html {
   html, body {
     height: auto;
     overflow-y: auto;
+    overflow-x: hidden;
     touch-action: auto;
+    overscroll-behavior: contain;
   }
 
   .overlay {
-    margin-top: 40px;
+    max-width: 90%;
+    margin: 40px auto 60px auto;
+    text-align: center;
+    position: static; /* make sure it's not absolutely positioned */
+    transform: none;  /* remove centering offset */
   }
-  
+
   ::-webkit-scrollbar {
     display: none;
   }
-
-  body {
-    overscroll-behavior: contain;
-  }
 }
 
-
-@media (max-width: 768px) {
-.overlay {
-  margin: 60px auto;
-}
-}
