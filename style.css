@@ -78,13 +78,12 @@ body, html {
   }
 
   .site-footer {
-  position: absolute;
-  bottom: -20px;
-  width: 100%;
+  margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
 }
+
 
 .album-art {
   width: 200px;
