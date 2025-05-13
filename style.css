@@ -127,9 +127,9 @@ body, html {
 
 @media (max-width: 768px) {
   html, body {
-    overflow: hidden;
+    overflow-y: scroll;
     height: 100vh;
-    touch-action: none; /* optional: disables gestures like swipe-refresh */
+    touch-action: auto;
   }
 
   ::-webkit-scrollbar {
@@ -137,9 +137,10 @@ body, html {
   }
 
   body {
-    overscroll-behavior: contain; /* prevents bounce/overscroll */
+    overscroll-behavior: contain;
   }
 }
+
 
 @media (max-width: 768px) {
   .overlay {
