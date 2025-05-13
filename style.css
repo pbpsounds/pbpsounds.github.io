@@ -92,7 +92,7 @@ body, html {
 .album-art {
   width: 200px;
   max-width: 90%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0px auto;
   display: block;
   border-radius: 12px;
   opacity: 0;
