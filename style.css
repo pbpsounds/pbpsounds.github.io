@@ -1,26 +1,27 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    cursor: none;
-    overflow: auto;
-    font-family: 'Rajdhani', sans-serif;
-    height: 100%;
-    color: rgb(255, 255, 255);
-  }
-  
-  #bgVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .overlay {
-  max-width: 800px;
-  margin: 0px auto 60px auto;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  overflow: auto;
+  font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background: #000;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
   padding: 0 20px;
   text-align: center;
   opacity: 0;
@@ -28,81 +29,83 @@ body, html {
   animation-delay: 0.5s;
 }
 
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
+}
 
-  
- .logo-gif {
-  display: inline-block;
-  margin: 0 auto -10px auto; /* center + spacing below */
+.logo-gif {
+  display: block;
+  margin: 0 auto 30px auto;
   width: 100%;
   max-width: 400px;
   height: auto;
   z-index: 2;
 }
 
-  
-  .links a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    border: 1px solid white;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-  
-  .links a:hover {
-    background-color: rgba(0, 255, 85, 0.377);
-  }
-  
-  .about-section {
-    max-width: 700px;
-    margin: 40px auto 0 auto;
-    padding: 0 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3); /* optional: slight dark overlay */
-    border-radius: 10px;
-  }
-  .about-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    margin-bottom: 15px;
-  }
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
 
-  .site-footer {
+.album-block {
+  text-align: center;
+}
+
+.album-art {
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.album-block:nth-child(1) .album-art {
+  box-shadow: 0 0 20px rgba(0, 255, 85, 0.6);
+}
+
+.album-block:nth-child(1) .album-art:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 85, 0.8);
+}
+
+.album-block:nth-child(2) .album-art {
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+}
+
+.album-block:nth-child(2) .album-art:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  background-color: rgba(0, 255, 85, 0.377);
+}
+
+.site-footer {
   margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
-
-.album-art {
-  width: 200px;
-  max-width: 90%;
-  margin: 0 auto 0px auto;
-  display: block;
-  border-radius: 12px;
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-  animation-delay: 1s;
-  box-shadow: 0 0 20px rgba(0, 255, 85, 0.6);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-
-/* Custom glowing cursor */
 .cursor {
   position: fixed;
   width: 20px;
@@ -116,7 +119,6 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-/* Scrollbar Styling (WebKit) */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -143,12 +145,8 @@ body, html {
     max-width: 90%;
     margin: 40px auto 60px auto;
     text-align: center;
-    position: static; /* make sure it's not absolutely positioned */
-    transform: none;  /* remove centering offset */
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
+    position: static;
+    transform: none;
   }
 
   .logo-gif {
@@ -157,5 +155,18 @@ body, html {
     margin-right: auto;
     max-width: 80vw;
   }
-}
 
+  .album-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .album-art {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Official site for People Before Prophet$. Listen to the debut album 'Death by Hedonism'. New music coming soon.">
-  <meta name="keywords" content="People Before Prophets, progressive house, trance music, FL Studio artist, debut album, Death by Hedonism">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Official site for People Before Prophet$. Electronic music artist based in St. Louis, MO.">
+  <meta name="keywords" content="People Before Prophets, PBP, EDM, trance, dubstep, hard dance, electronic music, STL">
   <meta name="author" content="People Before Prophet$">
 
   <title>PBP$</title>
@@ -14,58 +13,53 @@
 </head>
 <body>
   <div class="overlay">
-    <img src="logo.gif" alt="Animated Logo" class= "logo-gif" width="400" height="auto">
-     <a href="https://www.youtube.com/watch?v=8HxFNwNlgxo&feature=youtu.be" target="_blank" rel="noopener">
-  <img src="album-cover.jpg" alt="Album Cover" class="album-art">
-</a>
+    <img src="logo.gif" alt="Animated Logo" class="logo-gif" width="400" height="auto">
+
+    <div class="album-grid">
+      <div class="album-block">
+        <a href="https://www.youtube.com/watch?v=8HxFNwNlgxo" target="_blank" rel="noopener">
+          <img src="album-cover.jpg" alt="Death by Hedonism Cover" class="album-art">
+        </a>
+        <h2>Death by Hedonism</h2>
+      </div>
+
+      <div class="album-block">
+        <a href="https://www.youtube.com/playlist?list=YOUR_EON_PLAYLIST_LINK" target="_blank" rel="noopener">
+          <img src="nibiru-cover.jpg" alt="Echoes of Nibiru Cover" class="album-art">
+        </a>
+        <h2>Echoes of Nibiru</h2>
+      </div>
+    </div>
+
     <h1>People Before Prophet$</h1>
-    <p>Debut album <em>Death by Hedonism</em> out now!</p>
+    <p>EDM artist based in St. Louis, MO</p>
+
     <div class="links">
       <a href="https://open.spotify.com/artist/76knvFTOswDBVnHaUVEi3q" target="_blank">Spotify</a>
       <a href="https://www.youtube.com/@pbpsounds" target="_blank">YouTube</a>
       <a href="https://music.apple.com/us/album/death-by-hedonism/1813677175" target="_blank">iTunes</a>
       <a href="https://www.instagram.com/pbpsounds/" target="_blank">Instagram</a>
-      <a href="https://x.com/pbpsounds" target="_blank">x</a>
-      <a href="https://www.facebook.com/profile.php?id=61575957335914">facebook</a>
+      <a href="https://x.com/pbpsounds" target="_blank">X</a>
+      <a href="https://www.facebook.com/profile.php?id=61575957335914" target="_blank">Facebook</a>
     </div>
-    <div class="about-section">
-    <h2>This Is Where I Begin</h2>
-    <p>
-      I’ve spent years chasing stability — thinking once life was figured out, I’d finally get to focus on music.
-    </p>
-    <p>
-      I’m not here with a massive following or a million views. I’m here with one album, one voice, and the decision to stop waiting for perfect timing.
-    </p>
-    <p>
-      This is me starting from where I am. From zero, maybe — but finally on the right path.
-    </p>
-    <p>
-     If you’re reading this, maybe you’re on your own version of that path. Maybe you’re building your way out of something. If so, I hope this music gives you some light, some momentum, or at the very least — something real to hold onto for a few minutes.
-    </p>
-    <p>
-      More is coming.
-    </p>
-    <p>
-      Thank you for being here.<br>
-     — <strong>PBP$</strong>
-    </p>
-    </div>
+
     <footer class="site-footer">
-    <p>&copy; 2025 People Before Prophet$,PBP$. All rights reserved.</p>
-  </footer>
+      <p>&copy; 2025 People Before Prophet$, PBP$. All rights reserved.</p>
+    </footer>
   </div>
+
   <video autoplay muted loop id="bgVideo">
     <source src="rain_loop.mp4" type="video/mp4" />
   </video>
-<div class="cursor"></div>
 
-<script>
-  const cursor = document.querySelector('.cursor');
+  <div class="cursor"></div>
 
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
-</script>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
 </body>
 </html>
