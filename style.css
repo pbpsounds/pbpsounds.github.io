@@ -35,6 +35,19 @@ body, html {
   }
 }
 
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 191, 216, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 191, 216, 1);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 191, 216, 0.6);
+  }
+}
+
+
 .logo-gif {
   display: block;
   margin: 0 auto 30px auto;
@@ -85,7 +98,8 @@ body, html {
   box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
 }
 .album-block.summer .album-art {
-  box-shadow: 0 0 20px rgba(0, 191, 216, 0.6); /* Cyan glow */
+  box-shadow: 0 0 20px rgba(0, 191, 216, 0.6);
+  animation: pulseGlow 2.5s infinite ease-in-out;
 }
 
 .album-block.summer .album-art:hover {
