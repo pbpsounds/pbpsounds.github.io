@@ -84,6 +84,14 @@ body, html {
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
 }
+.album-block.summer .album-art {
+  box-shadow: 0 0 20px rgba(0, 191, 216, 0.6); /* Cyan glow */
+}
+
+.album-block.summer .album-art:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 191, 216, 0.8); /* Brighter cyan on hover */
+}
 
 .links a {
   display: inline-block;
